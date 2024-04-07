@@ -1,0 +1,11 @@
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\bin\Release\net6.0\Tournament.deps.json
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\bin\Release\net6.0\Tournament.dll
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\bin\Release\net6.0\Tournament.pdb
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.AssemblyInfoInputs.cache
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.AssemblyInfo.cs
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.csproj.CoreCompileInputs.cache
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.dll
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\refint\Tournament.dll
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\Tournament.pdb
+C:\Users\akirc\OneDrive\Desktop\Projects\Tournament\obj\Release\net6.0\ref\Tournament.dll
