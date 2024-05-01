@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Tournament.GameMod
 {
+    // A game mod is an alteration to an existing tournament type
+    // For example, if you want a single elimination but each match is best of 3
+    // BaseTournament would be a single elimination tournament and the mod would be best of 3
+    // There's no reason you couldn't put a game mod inside a game mod for that matter
     public abstract class AbstractGameMod<Player> : ITournament<Player>
     {
         public AbstractTournament<Player> BaseTournament { get; private set; }

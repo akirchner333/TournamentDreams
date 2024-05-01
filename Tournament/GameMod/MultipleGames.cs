@@ -39,22 +39,6 @@ namespace Tournament.GameMod
 
         public override void GameResults(Result result)
         {
-            //if(result == Result.DRAW)
-            //{
-            //    _aRecord.Draws++;
-            //    _bRecord.Draws++;
-            //}
-            //else if((result == Result.A_WINS && SubTurn % 2 == 0) || (result == Result.B_WINS && SubTurn % 2 == 1))
-            //{
-            //    _aRecord.Wins++;
-            //    _bRecord.Losses++;
-            //}
-            //else
-            //{
-            //    _aRecord.Losses++;
-            //    _bRecord.Wins++;
-            //}
-
             var (a, b) = BaseTournament.NextIndexes();
             if(SubTurn % 2 == 0)
                 BaseTournament.UpdateRecords(result, a, b);

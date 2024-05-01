@@ -33,12 +33,17 @@
             }
         }
 
+        // These two functions are the primary ones external applications would be interacting with
+
+        // Returns the next pairing
         public (Player, Player) NextGame()
         {
             var (a, b) = NextIndexes();
             return (Players[a].player, Players[b].player);
         }
 
+        // This is where you send the results of the current game.
+        // Records the results and moves on to the next turn
         public virtual void GameResults(Result result)
         {
             var (a, b) = NextIndexes();
@@ -46,6 +51,8 @@
             UpdateRecords(result, a, b);
             IncrementTurn();
         }
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         public void UpdateRecords(Result result, int a, int b)
         {
@@ -82,17 +89,23 @@
             return TurnIndexes(Turn);
         }
 
+        // Run at the start of each round, does any setup and assignment required
         public virtual void SetupRound() { }
 
         // Gets the whole current round
         public abstract List<(Player, Player)> CurrentRound();
         public abstract (int, int) TurnIndexes(int turn);
+        // How many turns in the current round?
         public abstract int TurnsInRound();
+        // Has the tournament finished?
         public abstract bool Finished();
 
-        public (Player, int, int)[] Rankings()
+        // What is everyone's ranking?
+        // Returns the player, their ranking (factoring in ties), and the score
+        public virtual (Player, int, int)[] Rankings()
         {
             Array.Sort(Players, ComparePlayers);
+            // If two players have the same final score, they get the same ranking
             int lastIndex = 1;
             int lastScore = -1;
             return Players.Select((p, index) => {

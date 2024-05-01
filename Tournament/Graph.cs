@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tournament
 {
-    // A class for making graphs and assigning them maximum matches
+    // A class for making graphs and assigning them maximum matches (https://en.wikipedia.org/wiki/Maximum_cardinality_matching)
     // This is useful for assigning tournaments that have complicated rules about who can play who (e.g. swiss)
     // Connect each player to all the players they can legally play and then use FindMatching to assign them
     public class Graph
@@ -67,6 +67,7 @@ namespace Tournament
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Blossom algorithm ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // Code based on https://medium.com/@ckildalbrandt/demystifying-edmonds-blossom-algorithm-with-python-code-6353eb043311
         // converted into c#, cleaned up to make more readable, and then placed inside this object
+        // https://en.wikipedia.org/wiki/Blossom_algorithm
         public List<(int, int)> FindMatches()
         {
             var parents = new int[VertexCount];

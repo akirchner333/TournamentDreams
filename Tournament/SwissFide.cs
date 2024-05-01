@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Tournament
 {
+    // This does not currently work. Don't use it!
+
     // From FIDE Rules C.04.1 Basic Rules for Swiss Systems (https://handbook.fide.com/chapter/C0401)
     // X Two players SHALL NOT player each other more than once
     // _ For each player, the difference between white games played and black games played SHALL NOT be greater than 2 or less than negative 2
@@ -13,8 +15,6 @@ namespace Tournament
     // _ Players SHOULD be paired to others with the same score
     // _ Players SHOULD be given the color they've played less
     //      - Failing that, they SHOULD be given the color that alternates from the last one they played
-
-    // You know, a lot of these requirements do not apply to me
     public enum SideReq
     {
         WHITE_MAND,

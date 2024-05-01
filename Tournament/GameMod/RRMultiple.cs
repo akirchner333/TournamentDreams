@@ -7,6 +7,7 @@ using Tournament.Series;
 
 namespace Tournament.GameMod
 {
+    // Takes the round robin tournament and alters it so each player plays multiple times
     public class RRMultiple<Player> : ITournament<Player>
     {
         public int Games { get; private set; }

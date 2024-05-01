@@ -33,6 +33,7 @@ namespace Tournament
             }).ToList();
         }
 
+        // https://en.wikipedia.org/wiki/Round-robin_tournament#Circle_method
         public override void SetupRound()
         {
             ThisRound.Clear();
@@ -54,7 +55,6 @@ namespace Tournament
             return Round >= (Players.Length + ((Players.Length % 2 == 0) ? - 1 : 0));
         }
 
-        // https://en.wikipedia.org/wiki/Round-robin_tournament#Circle_method
         public Queue<int> MakeWheel()
         {
             // Make a list of all the indexes except the last one
